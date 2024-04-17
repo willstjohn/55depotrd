@@ -1,0 +1,281 @@
+/* Add this to reset browser default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Trebuchet MS;
+    background-color: #333; /* Dark background */
+    color: #fff; /* Light text color */
+}
+
+header {
+    font-family: Trebuchet MS;
+    background-color: #222; /* Even darker shade for header/footer */
+    color: #ccc; /* Slightly dimmed text color for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align horizontally */
+    justify-content: center; /* Center align vertically */
+    padding: 20px 0; /* Adjust padding as necessary */
+    width: 100%; /* Ensure the header extends full width */
+    z-index: 10;
+    position: relative; /* or 'fixed' if it should stay at the top when scrolling */
+  /* Other styles for your header */
+}
+
+h2 {
+    text-align: center; /* Centers the text of h2 elements */
+    margin-top: 40px; /* Keeps the top margin as is */
+    margin-bottom: 20px; /* Keeps the bottom margin as is */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    gap: 20px; /* Space between nav items */
+}
+
+nav li {
+    padding: 10px; /* Add padding to each nav item for spacing */
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: bold; /* Optional: makes the nav links bold */
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline; /* Optional: adds an underline on hover */
+}
+
+h1 {
+    margin-bottom: 20px; /* Add space between the title and nav links */
+}
+
+main {
+    padding: 20px;
+}
+
+#gallery {
+    text-align: center; /* Centers the gallery header and thumbnails */
+    margin-top: 50px; /* Space from the previous section */
+}
+
+#thumbnails {
+    display: inline-block; /* Allows the thumbnails to be centered by text-align */
+}
+
+.thumbnail {
+    display: inline-block; /* Makes each thumbnail an inline-level block */
+    margin: 5px; /* Spacing between thumbnails */
+}
+
+/* If you use img directly, you may want to apply the inline-block to them instead */
+#thumbnails img {
+    border: 2px solid #000000; /* Adjust color and size as needed */
+    display: inline-block; /* Makes each image an inline-level block */
+    margin: 5px; /* Spacing between images */
+    width: 500px; /* or any other size */
+    height: auto;
+    /* ... other styles ... */
+}
+
+#details {
+    width: 100%; /* Use 100% width to ensure it occupies all the horizontal space */
+    max-width: 800px; /* Or any maximum width you prefer */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 1em; /* or any other unit of measurement you prefer */
+    text-indent: 1.5em; /* Indents the first line of the paragraph */
+}
+
+/* If you have a specific container for the text, you can apply these styles directly to it */
+.details-content {
+    width: 100%; /* Use 100% width to ensure it occupies all the horizontal space */
+    max-width: 800px; /* Or any maximum width you prefer */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 1em; /* or any other unit of measurement you prefer */
+    text-indent: 1.5em; /* Indents the first line of the paragraph */
+}
+
+#contact {
+    text-align: center; /* Centers the text of the contact header */
+    margin-top: 50px; /* Space from the previous section */
+}
+
+#contactForm {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #333; /* Dark background for the form, matching the body */
+    border-radius: 8px; /* Rounds the corners of the form */
+    padding: 20px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px; /* Spacing between each input field */
+    background-color: #555; /* Lighter than the form background for contrast */
+    border: 1px solid #777; /* Slightly lighter border for visibility */
+    color: #fff; /* White text color */
+    border-radius: 4px; /* Rounded corners for the input fields */
+    -webkit-appearance: none; /* Removes default chrome and safari style */
+    -moz-appearance: none; /* Removes default style Firefox */
+}
+
+/* Targeting webkit browsers like Chrome and Safari for placeholder color */
+#contactForm input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+/* Targeting Mozilla Firefox for placeholder color */
+#contactForm input::-moz-placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox reduces the opacity of the placeholder by default */
+}
+
+/* Targeting Internet Explorer for placeholder color */
+#contactForm input:-ms-input-placeholder {
+    color: #fff;
+}
+
+#contactForm button {
+    width: 100%;
+    padding: 10px;
+    background-color: #222; /* Dark background for buttons */
+    color: #fff; /* White text color */
+    border: none;
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+#contactForm button:hover {
+    background-color: #0e76a8; /* Slightly lighter color on hover */
+}
+
+/* Style for MapBox */
+#map {
+    width: 70%;
+    height: 600px; /* Adjust the size as needed */
+    border: 3px solid #000000; /* Adds a border around the map */
+    margin-top: 20px; /* If you need some space above the map */
+    margin-bottom: 20px; /* If you need some space below the map */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    background-color: #222; /* Even darker shade for footer */
+    color: #ccc; /* Slightly dimmed text color for contrast */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.button-container {
+    display: flex;        /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+}
+
+#recenter-map {
+    width: 110px; /* Adjust the width as needed */
+    height: 27px; /* Adjust the height as needed */
+    background-color: #191919; /* Dark grey background */
+    border: none; /* No border */
+    color: white; /* White text */
+    font-size: 13px; /* Adjust the font size as needed */
+    font-family: 'Trebuchet MS'; /* Font family of the text */
+    border-radius: 5px; /* Rounded corners with a radius of 25px */
+    cursor: pointer; /* Changes the mouse cursor to a pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#see-more {
+    width: 110px; /* Adjust the width as needed */
+    height: 27px; /* Adjust the height as needed */
+    background-color: #191919; /* Dark grey background */
+    border: none; /* No border */
+    color: white; /* White text */
+    font-size: 13px; /* Adjust the font size as needed */
+    font-family: 'Trebuchet MS'; /* Font family of the text */
+    border-radius: 5px; /* Rounded corners with a radius of 25px */
+    cursor: pointer; /* Changes the mouse cursor to a pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.tour-button-container {
+    text-align: center;
+    margin-top: 20px; /* or any space you want from the top */
+}
+
+.tour-button {
+    display: inline-block;
+    padding: 15px 30px; /* large padding makes the button larger */
+    font-size: 20px; /* larger font size for the text */
+    background-color: #007bff; /* a bright, eye-catching color */
+    color: white;
+    text-decoration: none; /* remove underline from links */
+    border-radius: 5px; /* rounded corners */
+    transition: background-color 0.3s ease; /* smooth background color transition on hover */
+}
+
+.tour-button:hover {
+    background-color: #0056b3; /* slightly darker shade on hover for a subtle effect */
+}
+
+.open-house-banner {
+    background-color: #ff9900; /* Change to your desired background color */
+    color: white; /* Change text color as needed */
+    text-align: center;
+    padding: 10px 0; /* Add padding to increase the height of the banner */
+    font-size: 1.5em; /* Make the text larger to catch attention */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* z-index: 1000; Ensure it's above other content */
+    z-index: 5; /* lower than the header so it doesn't overlap */
+    position: relative; /* or 'absolute' if it needs to be positioned out of the normal flow */
+    top: 0; /* Adjust this value so it doesn't overlap the header */
+    margin-top: /* height of the header */; /* if needed */
+    width: 100%;
+}
+  
+.asking-price-container {
+    background-color: rgb(25, 25, 25); /* Background color for the box */
+    color: white; /* Text color */
+    padding: 20px; /* Spacing inside the box */
+    width: fit-content; /* Set the width to fit the content */
+    margin: 20px; /* Add some margin around the box */
+    border-radius: 8px; /* Optional: if you want rounded corners */
+    display: flex;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.asking-price {
+    font-size: 1.5em; /* Adjust the font size as desired */
+    font-weight: bold; /* Optional: if you want the text to be bold */
+    text-align: center; /* Center the text within the box */
+    margin-left: auto;
+    margin-right: auto;
+}

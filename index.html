@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>55 Depot Road</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+</head>
+<body>
+    <div class="open-house-banner">
+        <p>Open House This Weekend! | 3/20 & 3/21 1:00PM-3:00PM.</p>
+      </div>      
+    <header>
+        <h1>55 Depot Road, Boxford, MA 01921</h1>
+        <nav>
+            <ul>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#virtual-tour">Virtual Tour</a></li>
+                <li><a href="#map-area">Location</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://drive.google.com/uc?export=download&id=17liPyQyU_omwk7gTr0JNg-ykeKjRY6MI" download="55 Depot Rd Documents.zip" class="download-button">Download Documents</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img src="55 Depot_75.jpg" style="display: block; margin-left: auto; margin-right: auto; width: 1010px; height: auto; border: 4px solid rgb(29, 29, 29);">
+        </div>      
+        <section id="details">
+            <h2>Details</h2>
+            <p>55 Depot Road is a move-in ready Nantucket Colonial situated on 2.12 acres and located .5 miles from
+                the charming East Boxford village. The East Boxford village is home to Boxford Community Kitchen, Cole
+                Elementary School, Boxford Commons athletic complex and part of the desirable Laurel Hollow
+                neighborhood. Less than 5 minutes to I-95.</p>
+            <br>
+            <p>White and walnut custom cabinetry in the updated eat-in chef’s kitchen featuring appliances from Sub-
+                Zero, Miele and Capital. Cathedral ceiling family room with custom built-ins and wood burning insert
+                adjoins a bright sunroom featuring radiant heat and eight large windows to capture the entertainer’s
+                dream back yard. Finishing the first floor is an updated laundry/pantry area with custom cabinets, a
+                second refrigerator and abundant storage, large living room with gas fireplace, formal dining room
+                featuring Phillip Jeffries wallpaper and custom window treatments, updated large powder room with
+                shiplap, custom closets and cubbies in the back hall mudroom area. Hardwood floors with custom stain
+                throughout.</p>
+            <br>
+            <p>Upstairs there are 4 bedrooms, office with custom cabinetry, built-ins and custom stained hardwood
+                floors. Both the primary bathroom and hall bathroom have been updated with custom cabinetry and
+                contemporary finishes. Radiant heat in primary bathroom with freestanding slipper tub. One of the
+                bedrooms is located over the garage with an en-suite updated bathroom, 3rd zone heat and a rear
+                staircase to access it.</p>
+            <br>
+            <p>Finished lower level with hardwood floors, 4 zones of radiant heat with a full bathroom, second media
+                area with 7.1 surround sound, gym area and guest sleeping quarters.</p>
+            <br>
+            <p>Step outside and you will find an 18x36 heated salt water gunite pool with PebbleTec finish and
+                integrated spa and auto cover. Custom outdoor kitchen with appliances from Lynx featuring separate
+                double gas burners, 48” gas grill and cocktail pro. Ice maker, beverage center and beadboard cabinets
+                complete the kitchen. Hardscape area made of bluestone and Vermont granite with plenty of space for
+                loungers, dining and sitting. Custom pool house with 1/2 bath, sitting area, TV/outdoor speakers and
+                outdoor shower.</p>
+            <br>
+            <p>The home was built in 1998, but features many updates including new furnace 2019, stainless steel
+                water heater 2018, roof 2012, windows 2010 and exterior doors 2020.</p>
+            <br>
+            <p>Mature landscaping and professional landscape lighting welcome you home. 13 zone irrigation, in
+                ground dog fence and fenced-in vegetable garden complete the back yard. The home also features a
+                large leveled side yard for outdoor hockey rink/sports. Direct access to the Boxford Trails Association
+                trail network for mountain biking and walks with furry friends.</p>
+            <br>
+            <div class="asking-price-container">
+                <p class="asking-price">Asking Price: $1,825,000</p>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <!--<img src="55 Depot_47.jpg" alt="Front view" id="mainImage" style="width: 1020px; height: auto;" style="border: 2px solid #000000;"/> -->
+            <div id="thumbnails">
+                <!-- Thumbnails -->
+                <img src="55 Depot_01.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_02.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_06.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_05.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_09.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_10.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_11.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_12.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_14.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_15.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_17.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_18.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_19.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_20.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_21.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_22.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_24.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_26.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_27.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_28.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_30.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_31.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_32.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_35.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_36.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_37.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_38.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_39.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_40.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_41.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_43.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_44.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_46.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_47.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_48.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_49.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_50.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_52.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_53.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_54.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_56.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_57.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_66.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_67.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_68.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_71.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_72.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_74.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_75.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_76.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_80.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_94.jpg" onclick="changeImage(this);" class="thumbnail">
+                <img src="55 Depot_95.jpg" onclick="changeImage(this);" class="thumbnail">
+                <!-- Add more thumbnails as needed -->
+            </div>
+            <!-- <div class="button-container"> -->
+                <!-- <button id="see-more">See More</button> -->
+            <!-- </div>         -->
+        </section>
+        <section id="virtual-tour">
+        <h2>Virtual Tour</h2>
+        <div class="tour-button-container">
+            <a href="https://unbranded.youriguide.com/55_depot_rd_boxford_ma/" target="_blank" class="tour-button">Take the 3D virtual tour</a>
+        </div>  
+        </section>
+        <section id="map-area">
+            <h2>Location</h2>
+            <div id="map"></div>
+            <div class="button-container">
+                <button id="recenter-map">Recenter Map</button>
+            </div>            
+        </section>
+        <br>
+        <div>
+            <img src="Boxford Trails.png" style="display: block; margin-left: auto; margin-right: auto; width: 750px; height: auto; border: 4px solid rgb(29, 29, 29);">
+        </div>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <p>Phone: 617-949-0474</p>
+                <br>
+                <p>Email: biria@verizon.net</p>
+                <br>
+                <!-- <p></p>
+                <br> -->
+                <!-- <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="text" id="phone" name="phone" placeholder="Your Phone" required>
+                <button type="submit">Submit</button> -->
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Contact us for more information!</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
