@@ -86,7 +86,7 @@ main {
     border: 2px solid #000000; /* Adjust color and size as needed */
     display: inline-block; /* Makes each image an inline-level block */
     margin: 5px; /* Spacing between images */
-    width: 500px; /* or any other size */
+    width: 30%; /* or any other size */
     height: auto;
     /* ... other styles ... */
 }
@@ -172,7 +172,7 @@ main {
 
 /* Style for MapBox */
 #map {
-    width: 70%;
+    width: 85%;
     height: 600px; /* Adjust the size as needed */
     border: 3px solid #000000; /* Adds a border around the map */
     margin-top: 20px; /* If you need some space above the map */
